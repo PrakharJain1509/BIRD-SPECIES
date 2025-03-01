@@ -1,0 +1,7 @@
+numpy
+os
+joblib
+librosa
+torch
+timm
+pandas
