@@ -7,7 +7,7 @@ This project utilizes both **audio and image** inputs to identify bird species. 
 - **Audio-based Bird Classification**: Uses a trained deep learning model to classify birds based on their vocal sounds.
 - **Image-based Bird Classification**: Identifies bird species from images using a CNN-based classifier.
 - **Pre-trained Model Weights**: The repository includes pre-trained model weights for both image and audio classification.
-- **Streamlit Web Interface**: A user-friendly UI to upload images or audio files for classification.
+- **Streamlit Web Interface**: A user-friendly UI to upload images and audio files for classification.
 
 ## Installation
 1. Clone the repository:
@@ -66,14 +66,4 @@ This will launch the web-based interface in your browser.
 - **Image Files**: Stored in `image/test/`
 
 ## Output
-After providing an image or audio file, the model will return the predicted bird species name.
-
-## Example Usage (Audio Prediction)
-```python
-from audio_main import AudioPredictor
-
-predictor = AudioPredictor()
-audio_path = "audio/data/AUDIO_FILES/houspa1.ogg"
-label, score = predictor.predict_single_audio(audio_path)
-print(f"Predicted Bird: {label} with confidence {score:.4f}")
-```
+After providing an image and audio file, the model will return the predicted bird species name.
