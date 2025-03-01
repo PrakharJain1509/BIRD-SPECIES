@@ -13,7 +13,7 @@ This project utilizes both **audio and image** inputs to identify bird species. 
 1. Clone the repository:
    ```bash
    git clone https://github.com/PrakharJain1509/BIRD-SPECIES.git
-   cd Bird-Species-Detection
+   cd BIRD-SPECIES
    ```
 2. Create a virtual environment (optional but recommended):
    ```bash
@@ -46,6 +46,7 @@ This will launch the web-based interface in your browser.
 │   ├── new_audio_main.py
 │   ├── models_weights        # Audio classification model weights
 │   ├── data                  # Contains audio files and metadata
+│   │   └── AUDIO_FILES       # Directory for audio files
 │   ├── listOfBirdNames.txt
 │   ├── commonNames.txt
 ├── image                     # Image processing module
@@ -53,13 +54,27 @@ This will launch the web-based interface in your browser.
 │   ├── new_image_main.py
 │   ├── test                  # Sample test images
 │   ├── weights               # Image classification model weights
+├── Training_Codes            # Training scripts for models
+│   ├── classification_data   # Classification datasets
+│   │   ├── blasti
+│   │   ├── cmnmyn
+│   │   └── piedbu
+│   ├── dataset               # Processed dataset
+│   │   ├── output
+│   │   │   ├── test_data
+│   │   │   ├── train_data
+│   │   ├── test_data
+│   │   ├── train_data
+│   ├── output
+│   │   ├── test_data
+│   │   ├── train_data
 ├── common_names.txt          # Common bird names
 └── requirements.txt          # Dependencies file
 ```
 
 ## Models Used
-- **Audio Model**: `effnet_seg20_80low.ckpt` (EfficientNet-based model for audio classification)
-- **Image Model**: `bird-resnet34.pth` (ResNet-34 model for image classification)
+- **Audio Model**: `audio/models_weights/effnet_seg20_80low.ckpt` (EfficientNet-based model for audio classification)
+- **Image Model**: `image/weights/bird-resnet34.pth` (ResNet-34 model for image classification)
 
 ## Input Data
 - **Audio Files**: Stored in `audio/data/AUDIO_FILES/`
@@ -67,3 +82,4 @@ This will launch the web-based interface in your browser.
 
 ## Output
 After providing an image and audio file, the model will return the predicted bird species name.
+
