@@ -26,7 +26,7 @@ This project utilizes both **audio and image** inputs to identify bird species. 
    ```
    Alternatively, you can install them manually:
    ```bash
-   pip install numpy os-joblib librosa torch timm pandas
+   pip install numpy joblib librosa torch timm pandas
    ```
 
 ## Running the Application
