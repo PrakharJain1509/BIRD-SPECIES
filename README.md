@@ -83,3 +83,4 @@ This will launch the web-based interface in your browser.
 ## Output
 After providing an image and audio file, the model will return the predicted bird species name.
 
+![Demo](https://github.com/PrakharJain1509/BIRD-SPECIES/blob/main/assets/Demo.png)
