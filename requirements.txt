@@ -4,3 +4,4 @@ librosa
 torch
 timm
 pandas
+streamlit
